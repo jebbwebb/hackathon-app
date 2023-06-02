@@ -6,10 +6,11 @@ import Sidebar from './Sidebar';
 function MyApp({ Component, pageProps }) {
  
   
-  return 
+  return (
   <Sidebar>
   <Component {...pageProps} />;
   </Sidebar>
+  )
 }
 
 export default MyApp;
