@@ -45,10 +45,14 @@ function Table(props) {
           {height}ft
         </div>
         {showRaiseMessage && (
-          <p className="text-red-500 text-center mb-2">Can no longer raise the table</p>
+          <p className="text-red-500 text-center mb-2">
+            Can no longer raise the table
+          </p>
         )}
         {showLowerMessage && (
-          <p className="text-red-500 text-center mb-2">The table cannot be lowered any more</p>
+          <p className="text-red-500 text-center mb-2">
+            The table cannot be lowered any more
+          </p>
         )}
         <div className="flex justify-center space-x-4">
           <button

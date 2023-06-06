@@ -4,9 +4,6 @@ const Signup = () => {
   const router = useRouter();
 
   const handleSignUp = () => {
-    // Perform signup logic here
-
-    // Redirect to a different page
     router.push('/Login');
   };
 
@@ -15,7 +12,10 @@ const Signup = () => {
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h2 className="text-2xl mb-6">Sign Up</h2>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="name"
+          >
             Name
           </label>
           <input
@@ -26,7 +26,10 @@ const Signup = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="password"
+          >
             Password
           </label>
           <input

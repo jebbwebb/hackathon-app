@@ -52,10 +52,7 @@ function Timer(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle the form submission based on the selected option
-    // You can implement your logic here
 
-    // Close the modal
     closeModal();
   };
 
@@ -66,7 +63,8 @@ function Timer(props) {
         <Camera></Camera>
         <div className="bg-blue-200 p-4 mb-4">
           <div className="text-lg text-blue-800 mb-2">
-            The lights will be changed based on <span className="font-bold">{lights}</span>
+            The lights will be changed based on{' '}
+            <span className="font-bold">{lights}</span>
           </div>
           <div className="text-sm text-gray-700">
             {timerValue} Remaining til next interval
@@ -80,17 +78,19 @@ function Timer(props) {
         </div>
       </div>
 
-      {/* Modal */}
       <Modal
-       isOpen={isModalOpen}
-       onRequestClose={closeModal}
-       className="modal bg-white rounded shadow-lg p-6"
-       overlayClassName="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        className="modal bg-white rounded shadow-lg p-6"
+        overlayClassName="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
       >
         <h2 className="text-2xl mb-4">Alerts</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="alertOption" className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="alertOption"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               Select Alert Option:
             </label>
             <select

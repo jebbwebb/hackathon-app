@@ -16,9 +16,7 @@ function Payment() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform payment processing logic here
 
-    // Open the modal message
     openModal();
   };
 
@@ -28,7 +26,10 @@ function Payment() {
         <h2 className="text-2xl mb-6">Payment Form</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="cardNumber" className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="cardNumber"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               Card Number:
             </label>
             <input
@@ -38,7 +39,10 @@ function Payment() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="expiryDate" className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="expiryDate"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               Expiry Date:
             </label>
             <input
@@ -48,7 +52,10 @@ function Payment() {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="cvv" className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="cvv"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               CVV:
             </label>
             <input
@@ -68,7 +75,6 @@ function Payment() {
         </form>
       </div>
 
-      {/* Modal message */}
       <Modal isOpen={isModalOpen} onRequestClose={closeModal} className="modal">
         <h2 className="text-2xl mb-4">Payment Successful!</h2>
         <p className="text-lg mb-4">Happy Growing!</p>

@@ -4,14 +4,10 @@ function Login(props) {
   const router = useRouter();
 
   const handleSignIn = () => {
-    // Perform login logic here
-
-    // Redirect to a different page
     router.push('/Home');
   };
 
   const handleSignUp = () => {
-    // Redirect to the signup page
     router.push('/Signup');
   };
 
@@ -20,7 +16,10 @@ function Login(props) {
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h2 className="text-2xl mb-6">Login</h2>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="username"
+          >
             Username
           </label>
           <input
@@ -31,7 +30,10 @@ function Login(props) {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="password"
+          >
             Password
           </label>
           <input

@@ -29,35 +29,33 @@ function VoltageCircle() {
 
   return (
     <>
-    <Sidebar></Sidebar>
-    <div className="flex flex-col items-center">
-      <div className="w-24 h-24 rounded-full flex items-center justify-center text-white text-4xl bg-blue-500 mb-4">
-        {voltage}VH
-      </div>
-      <div className="flex justify-center space-x-4">
+      <Sidebar></Sidebar>
+      <div className="flex flex-col items-center">
+        <div className="w-24 h-24 rounded-full flex items-center justify-center text-white text-4xl bg-blue-500 mb-4">
+          {voltage}VH
+        </div>
+        <div className="flex justify-center space-x-4">
+          <button
+            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
+            onClick={increaseVoltage}
+          >
+            Increase
+          </button>
+          <button
+            className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+            onClick={decreaseVoltage}
+          >
+            Decrease
+          </button>
+        </div>
         <button
-          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
-          onClick={increaseVoltage}
+          className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded mt-4"
+          onClick={emergencyShutdown}
         >
-          Increase
+          Emergency Shutdown
         </button>
-        <button
-          className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
-          onClick={decreaseVoltage}
-        >
-          Decrease
-        </button>
+        <div className="text-xl mt-4">Price: ${price}/per day</div>
       </div>
-      <button
-        className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded mt-4"
-        onClick={emergencyShutdown}
-      >
-        Emergency Shutdown
-      </button>
-      <div className="text-xl mt-4">
-        Price: ${price}/per day
-      </div>
-    </div>
     </>
   );
 }

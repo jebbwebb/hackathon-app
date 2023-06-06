@@ -21,7 +21,6 @@ function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Update the values based on the selected plant and farming types
     let temperature = 72;
     let humidity = 65;
     let pressure = 72;
@@ -55,14 +54,12 @@ function Home() {
         timer = '28:35 Remaining';
         tableHeight = '5ft';
         lights = '18 hour intervals';
-        
+
         break;
       default:
-        // Handle the default case or add additional cases if needed
         break;
     }
 
-    // Add the current plant entry to the plantEntries array
     const newPlantEntry = {
       temperature,
       humidity,
@@ -113,11 +110,11 @@ function Home() {
               <li>Light Schedule: {entry.lights}</li>
             </ol>
             <button
-  onClick={() => handleViewDetails(index)}
-  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2"
->
-  View
-</button>
+              onClick={() => handleViewDetails(index)}
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2"
+            >
+              View
+            </button>
           </div>
         ))}
       </div>
@@ -126,48 +123,48 @@ function Home() {
         onRequestClose={closeModal}
         contentLabel="Add New Plant"
       >
-       <h2 className="text-2xl mb-4">Add New Plant</h2>
-<form onSubmit={handleSubmit} className="flex flex-col">
-  <label className="mb-2">
-    Plant Type:
-    <select
-      value={plantType}
-      onChange={(e) => setPlantType(e.target.value)}
-      className="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-    >
-      <option value="">Select Plant Type</option>
-      <option value="basil">Basil</option>
-      <option value="cannabis">Cannabis</option>
-      <option value="potatoes">Potatoes</option>
-      <option value="roses">Roses</option>
-    </select>
-  </label>
-  <label className="mb-2">
-    Farming Type:
-    <select
-      value={farmingType}
-      onChange={(e) => setFarmingType(e.target.value)}
-      className="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-    >
-      <option value="">Select Farming Type</option>
-      <option value="aquaponics">Aquaponics</option>
-      <option value="aeroponics">Aeroponics</option>
-      <option value="hydroponics">Hydroponics</option>
-    </select>
-  </label>
-  <button
-    type="submit"
-    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4"
-  >
-    Submit
-  </button>
-</form>
-<button
-  onClick={closeModal}
-  className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-2"
->
-  Close
-</button>
+        <h2 className="text-2xl mb-4">Add New Plant</h2>
+        <form onSubmit={handleSubmit} className="flex flex-col">
+          <label className="mb-2">
+            Plant Type:
+            <select
+              value={plantType}
+              onChange={(e) => setPlantType(e.target.value)}
+              className="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            >
+              <option value="">Select Plant Type</option>
+              <option value="basil">Basil</option>
+              <option value="cannabis">Cannabis</option>
+              <option value="potatoes">Potatoes</option>
+              <option value="roses">Roses</option>
+            </select>
+          </label>
+          <label className="mb-2">
+            Farming Type:
+            <select
+              value={farmingType}
+              onChange={(e) => setFarmingType(e.target.value)}
+              className="block w-full mt-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            >
+              <option value="">Select Farming Type</option>
+              <option value="aquaponics">Aquaponics</option>
+              <option value="aeroponics">Aeroponics</option>
+              <option value="hydroponics">Hydroponics</option>
+            </select>
+          </label>
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4"
+          >
+            Submit
+          </button>
+        </form>
+        <button
+          onClick={closeModal}
+          className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-2"
+        >
+          Close
+        </button>
       </Modal>
     </div>
   );
