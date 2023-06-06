@@ -1,34 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+Project Overview
+This project was developed during the Cannatech 2023 hackathon. The challenge assigned to me was to create a UI/UX design for an app that allows users to control farming cultivation pods. The app includes features to manage temperature, humidity, pressure, lighting, table heights, music, and live camera feed.
 
-First, run the development server:
+Backstory
+I embarked on an 8-hour journey to attend the hackathon and dedicated the entire 24-hour time limit to working on this project by myself. The culmination of my efforts resulted in receiving the 2nd place award for my app. The hackathon was an exceptional event and a remarkable learning experience in my coding journey. It was my first time working with Next.js and Tailwind CSS, and it pushed me to my limits in terms of quickly adopting new technologies. Despite the continuous 24 hours of coding, I was both astonished and proud of what I was able to achieve.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Additional Information
+After the 24-hour period, I made the deliberate choice not to further modify the code in order to showcase what I could accomplish within such a short timeframe. Although I contemplated refining the project to enhance its presentation, I ultimately decided that doing so would detract from the essence of the hackathon and the reasons why I am immensely proud of it.
