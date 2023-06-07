@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Overview
 
-## Getting Started
+This project was created during the Cannatech 2023 hackathon. The challenge assigned to me was to create a UI/UX design for an app that allows users to control farming cultivation pods. The app includes features to manage temperature, humidity, pressure, lighting, table heights, music and more.
 
-First, run the development server:
+## Backstory
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+I embarked on an 8-hour journey to attend the hackathon and dedicated the entire 24-hour time limit to working on this project by myself. The culmination of my efforts resulted in receiving the **2nd place award** for my app. The hackathon was an exceptional event and a remarkable learning experience in my coding journey. It was my first time working with **Next.js** and **Tailwind CSS**, and it pushed me to my limits in terms of quickly adopting new technologies. Despite the continuous 24 hours of coding, I was both **astonished** and **proud** of what I was able to achieve.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Temperature, Humidity, and Pressure Controls
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The application allows users to adjust the environmental conditions such as temperature, humidity, and pressure within the system. By providing precise control over these factors, users can create an ideal growing environment for their plants.
 
-## Learn More
+### Voltage Adjustment for Lighting Units
 
-To learn more about Next.js, take a look at the following resources:
+Users can modify the voltage settings of the lighting units through the application. This feature enables users to control the intensity and brightness of the lights, providing customizable lighting conditions tailored to the specific needs of their plants.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Table Height Adjustment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The application offers the flexibility to adjust the height of the tables on which the plants rest. This feature allows users to accommodate different plant sizes and growth stages, ensuring optimal positioning and support for healthy plant growth.
 
-## Deploy on Vercel
+### IT Ticket System
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To streamline communication and support, the application includes an IT ticket system. Users can submit maintenance requests or ask questions related to the pods through this system. This ensures prompt assistance and effective resolution of any issues or concerns that users may have.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Live Camera Feed
+
+Since actual hardware was not present at the hackathon, I simulated the effect of a live camera feed of the plants by activating the webcam when visiting specific pages. This demonstrates how the live feed would function with the proper hardware functionality.
+
+### Music
+
+The pods themselves would have a Bluetooth speaker built inside to allow users to play music to their plants in order to stimulate growth. Although I initially planned to add a Spotify plugin to allow users to add their own playlist of music, due to time constraints, I decided to embed a 24/7 stream of plant growth frequencies to provide the same function.
+
+## Additional Information
+
+After the 24-hour period, I made the deliberate choice not to further modify the code in order to showcase what I could accomplish within such a short timeframe. Although I contemplated refining the project to enhance its presentation, I ultimately decided that doing so would detract from the essence of the hackathon and the reasons why I am **immensely proud** of it.
