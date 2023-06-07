@@ -1,6 +1,6 @@
 # Project Overview
 
-This project was created during the Cannatech 2023 hackathon. The challenge assigned to me was to create a UI/UX design for an app that allows users to control farming cultivation pods. The app includes features to manage temperature, humidity, pressure, lighting, table heights, music, and live camera feed.
+This project was created during the Cannatech 2023 hackathon. The challenge assigned to me was to create a UI/UX design for an app that allows users to control farming cultivation pods. The app includes features to manage temperature, humidity, pressure, lighting, table heights, music and more.
 
 ## Backstory
 
